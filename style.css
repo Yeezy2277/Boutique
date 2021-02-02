@@ -7,7 +7,7 @@
    }
 body {
 	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 button, input,textarea {
@@ -171,6 +171,7 @@ button {
 .startup-btn {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	gap:20px;
 }
 
@@ -184,13 +185,21 @@ button {
 
 .startup-btn img {
 border-radius: 20%;
+width: 120px;
+height: 120px;
 }
 
-.startup-btn-1 {
-	border: 10px solid black;
+.startup-btn__item button{
+	width: 120px;
+	height: 120px;
+}
+
+.startup-btn-1  {
+	border: 5px solid black;
 	border-radius: 20%;
 	padding: 0;
 }
+
 
 .startup-title h1 {
 	color: #29185A;
@@ -199,6 +208,7 @@ border-radius: 20%;
 .investers {
 	background: linear-gradient(#4A2DA7,#22407A);
 	padding-bottom: 100px;
+	padding-top: 20px;
 }
 
 .investers a {
@@ -297,9 +307,9 @@ border-radius: 20%;
 	background: #29185A;
 	justify-content: center;
 	align-items: center;
-	width: 590px;
+	width: 490px;
 	padding: 0;
-	height: 520px;
+	height: 420px;
 }
 
 .experts h2 {
@@ -366,8 +376,11 @@ border-radius: 20%;
 	color: #29185A;
 }
 
-.articles-slider__text {
+.slider {
 	text-align: center;
+}
+
+.articles-slider__text {
 	width: 55%;
 	padding-bottom: 100px;
 }
@@ -389,6 +402,7 @@ footer {
 .contact-block {
 	display: flex;
 	justify-content: space-around;
+	margin-left: 5%;
 }
 
 .contact-form input, textarea {
@@ -399,6 +413,12 @@ footer {
 	width: 35.5rem;
 	padding-top: 10px;
 	padding-left: 25px;
+}
+
+.contact-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-form input {
@@ -440,4 +460,44 @@ footer {
 
 .contacts p {
 	color: white;
+}
+
+.slider {
+	overflow: hidden;
+	margin: 20 auto;
+	max-width: 80%;
+}
+
+.slider-line {
+	display: flex;
+	justify-content: center;
+	transition: all ease 1s;
+}
+
+@media (max-width:1366px) {
+
+	.startups-text img:nth-child(1){
+		width: 75%;
+		height: auto;
+	}
+
+	.bottom-text h1 {
+		font-size: 16px;
+	}
+	
+	.investers-block__item img{
+		width: 65%;
+	}
+
+	.investers-block__item {
+		width: 365px;
+	}
+
+	.contact-img img{
+		width: 75%;
+	}
+
+	.contact-form input, textarea {
+		width: 25.5em;
+	}
 }

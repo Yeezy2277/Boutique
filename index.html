@@ -63,7 +63,9 @@
 		<div class="startups-block">
 			<div class="startups-text">
 				<h1>Startups</h1>
-				<img src="./img/startup-text1.png" alt="Text 1">
+				<div class="startup-img1">
+					<img src="./img/startup-text1.png" alt="Text 1">
+				</div>
 				<h4>Choose startup</h4>
 				<div class="startup-btn">
 					<div class="startup-btn__item startup-btn-1">
@@ -71,17 +73,17 @@
 							<img src="./img/startup-img0.png" alt="Startup 1">
 						</button>
 						</div>
-					<div class="startup-btn__item"
+					<div class="startup-btn__item startup-btn-2"
 					><button>
 						<img src="./img/startup-img1.png" alt="Startup 2">
 					</button>
 				</div>
-					<div class="startup-btn__item">
+					<div class="startup-btn__item startup-btn-3">
 						<button>
 							<img src="./img/startup-img2.png" alt="Startup 3">
 						</button>
 					</div>
-					<div class="startup-btn__item">
+					<div class="startup-btn__item startup-btn-">
 						<button>
 							<img src="./img/startup-img-3.png" alt="Startup 4">
 						</button>
@@ -153,41 +155,62 @@
 			</div>
 			<h2>How is MVP different from prototype</h2>
 			<div class="articles-slider">
-				<button>
+				<button class="left-btn">
 					<img src="./img/slider-left.png" alt="Slider Left">
 				</button>
-				<p class="articles-slider__text">
-					Definitions <br/> <br/>
-						A prototype in our case is a technical application of a service: for a mobile or a website.
-					In the MVP process (Minimum Viable Product) we check: <br/>
-						- Does anyone need it? And who exactly needs it? <br/>
-						- Are people willing to pay for this product / service?<br/>
-						- Is the Customer Acquisition Cost fit our financial model?<br/>
-					The most important part of an MVP is the marketing funnel test. The MVP is actually a process in which 
-					we choose which messages, channels and destinations, we want to focus on, when we reach out to our customers.
-					in order to answer ourselves for that questions we should take into consideration what mentioned 
-					in section 2 above.
-					The site itself or the mobile app is just the landing page at the end of the funnel, where we calculate 
-					the target operation, such as clicking the 'Buy' button. This calculation is necessary in order to calculate 
-					the purchase cost.
-					In the simplest case, this is done by dividing the number of clicks on the button by the amount of money 
-					invested in publishing the messages, channels and destinations.
-					To count the number of clicks on the `Buy` button, you do not even need a finished product / service. 
-					In response to a click on a button, there is no need to even display a window with a message such as: 
-					'Your response is very important to us, keep in touch, we will contact you when our product is ready.'
-					6.At this point we understand that in many cases, a finished prototype is not required for MVP. we can 
-					get along with a simple landing page that convinces the customer to purchase and a 'buy' button for example.
-					Warnings
-					1. Never say that you did an MVP if you did a survey such as: 'Would you use such a product if 
-					I will make one?''. A response to the product will appear only as soon as the first person will click 
-					the 'Buy' button through your funnel. Until then, for the sake of simplicity, assume that people lie in polls.
-					2. Never call a single landing page that you made: an MVP. The MVP is not a single landing page that you only 
-					show to your friends and acquaintances.
-					Without marketing funnel test that include enough target audience that respond to you, you actually 
-					do not perform an MVP and you will only come to the wrong conclusions.
-					</p>
-					</p>
-					<button>
+				<div class="slider">
+					<div class="slider-line">
+						<p class="articles-slider__text">
+							Definitions <br/> <br/>
+								A prototype in our case is a technical application of a service: for a mobile or a website.
+							In the MVP process (Minimum Viable Product) we check: <br/>
+								- Does anyone need it? And who exactly needs it? <br/>
+								- Are people willing to pay for this product / service?<br/>
+								- Is the Customer Acquisition Cost fit our financial model?<br/>
+							The most important part of an MVP is the marketing funnel test. The MVP is actually a process in which 
+							we choose which messages, channels and destinations, we want to focus on, when we reach out to our customers.
+							in order to answer ourselves for that questions we should take into consideration what mentioned 
+							in section 2 above.
+							The site itself or the mobile app is just the landing page at the end of the funnel, where we calculate 
+							the target operation, such as clicking the 'Buy' button. This calculation is necessary in order to calculate 
+							the purchase cost.
+							In the simplest case, this is done by dividing the number of clicks on the button by the amount of money 
+							invested in publishing the messages, channels and destinations.
+							To count the number of clicks on the `Buy` button, you do not even need a finished product / service. 
+							In response to a click on a button, there is no need to even display a window with a message such as: 
+							'Your response is very important to us, keep in touch, we will contact you when our product is ready.'
+							6.At this point we understand that in many cases, a finished prototype is not required for MVP. we can 
+							get along with a simple landing page that convinces the customer to purchase and a 'buy' button for example.
+							Warnings
+							1. Never say that you did an MVP if you did a survey such as: 'Would you use such a product if 
+							I will make one?''. A response to the product will appear only as soon as the first person will click 
+							the 'Buy' button through your funnel. Until then, for the sake of simplicity, assume that people lie in polls.
+							2. Never call a single landing page that you made: an MVP. The MVP is not a single landing page that you only 
+							show to your friends and acquaintances.
+							Without marketing funnel test that include enough target audience that respond to you, you actually 
+							do not perform an MVP and you will only come to the wrong conclusions.
+							</p>
+							</p>
+							<p class="articles-slider__text">
+							Conclusions <br/><br/>
+	
+							It's better to start with an MVP than with a prototype, it will save time and money.
+							In 90% of cases, already at the MVP stage you will understand what is needed for development and what is not.
+							Do not ask money from investors in order to finish the prototype, first get real results for the research you did in MVP.
+							If you are unable to perform an MVP without being funded by investors, you probably do not have enough capabilities to 
+							perform MVP on your own.
+							4.If you are thinking that your main goal is to build a prototype first and then to let the professionals get 
+							the funding from investors for marketing and sales - this is a serious mistake.
+							There is no point in trying to raise money from investors before you made an MVP.
+							If you do not know where and how to look for potential customers or you are first thinking of building a 
+							prototype that will help you present yourself for the purpose of raising money from investors, do not butter!
+							 do not start building the prototype at all! and if you started with it, then stop, and it is recommended to 
+							 read this entire post from the beginning and internalize it.
+	
+							</p>
+					</div>
+				</div>
+					<button class="right-btn">
 						<img src="./img/slider-right.png" alt="Slider Right">
 					</button>
 			</div>
@@ -218,4 +241,5 @@
 		</div>
 	</footer>
 </body>
+<script src="script.js"></script>
 </html>
