@@ -1,10 +1,11 @@
 const text = document.querySelectorAll(".articles-slider__text");
+const investBlocks = document.querySelectorAll(".investers-block__item");
 const sliderLine = document.querySelector(".slider-line");
 const btnLeft = document.querySelector(".left-btn");
 const btnRight = document.querySelector(".right-btn");
 let count = 0;
 let width;
-
+// slider text
 const init = () => {
 	console.log('resize');
 	width = document.querySelector(".slider").offsetWidth;
@@ -36,3 +37,21 @@ btnRight.addEventListener('click', () => {
 function rollSlider() {
 	sliderLine.style.transform = 'translate(-'+count*width+'px)'
 }
+//
+
+// burger menu
+document.querySelector(".burger").addEventListener("click", function(e) {
+	e.preventDefault();
+	// this.classList.toggle("is-active");
+	if (this.classList.contains("is-active")) {
+		this.classList.remove("is-active");
+		document.querySelector("#menu").classList.remove("nav-active");
+		document.body.classList.remove("body-active");
+	}
+	else {
+		this.classList.add("is-active");
+		document.querySelector("#menu").classList.add("nav-active");
+		document.body.classList.add("body-active");
+	}
+});
+//
