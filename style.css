@@ -235,7 +235,9 @@ button {
 	display: flex;
 	justify-content: space-evenly;
 	color:white;
-	gap: 15px;
+}
+.bottom-text h1{
+	padding-left: 15px;
 }
 
 .bottom-btn a{
@@ -299,7 +301,6 @@ button {
 .startup-btn {
 	display: flex;
 	align-items: center;
-	gap:20px;
 }
 
 .startup-btn button {
@@ -335,18 +336,12 @@ bottom: 1px;
 	color: #29185A;
 }
 
-.startup-btn__item {
-}
-
 .investers {
 	background: linear-gradient(#4A2DA7,#22407A);
 	padding-bottom: 100px;
 	padding-top: 20px;
 }
 
-.investers-block button{
-	/* display: none; */
-}
 .investers a {
 	text-decoration: none;
 	color:white;
@@ -385,7 +380,6 @@ bottom: 1px;
 
 .investers-block {
 	display: flex;
-	gap:30px;
 	text-align: center;
 }
 
@@ -399,6 +393,7 @@ bottom: 1px;
 	border-radius: 5%;
 	padding-bottom: 50px;
 	margin-top: 150px;
+	margin-left: 30px;
 }
 
 #investers-1 h2, #investers-2 h2, #investers-3 h2 {
@@ -441,6 +436,10 @@ bottom: 1px;
 	color: #29185A;
 	font-weight: 400;
 } 
+
+.investers-right-btn {
+	padding-right: 35px;
+}
 
 .active p {
 	width: 65%;
@@ -502,12 +501,12 @@ bottom: 1px;
 	font-weight: bold;
 	display: flex;
 	justify-content: center;
-	gap:35px;
 }
 
 .articles-btn button {
 	border-radius: 15px;
 	padding: 7px 20px;
+	margin-left: 25px;
 }
 
 .articles-btn button:nth-child(1) {
@@ -538,17 +537,6 @@ bottom: 1px;
 	margin: 20px auto;
 }
 
-.slider-invests-line {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	transition: all ease 1s;
-}
-
-.slider-invests-line button {
-	background: none;
-}
-
 .articles-slider__text {
 	display: flex;
 	flex-direction: column;
@@ -575,7 +563,6 @@ footer {
 .contact-form {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
 }
 
 .contact-block {
@@ -592,6 +579,7 @@ footer {
 	width: 35.5rem;
 	padding-top: 10px;
 	padding-left: 25px;
+	margin-top: 20px;
 }
 
 .contact-img {
@@ -616,19 +604,20 @@ footer {
 	width: 35%;
 	font-size: 32px;
 	border-radius: 15px;
+	margin-top: 20px;
 }
 
 .contacts {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 10px;
 	margin-right: 50px;
 }
 
 .contacts h4,.contacts p {
 	font-family: Roboto;
 	font-size: 32px;
+	margin-left: 10px;
 }
 
 .contacts h4 {
@@ -689,10 +678,6 @@ footer {
 	.investers-block__item {
 		width: 334px;
 	}
-	
-	.slider-invests-line {
-		gap: 5px;
-	}
 
 	.experts h2 {
 		font-size: 40px;
@@ -708,12 +693,10 @@ footer {
 }
 
 @media (max-width: 1090px) {
-	.investers-block {
-		gap: 10px;
-	}
 	.investers-block__item {
 		width: 290px;
 		text-align: center;
+		margin-left: 10px;
 	}
 
 	.investers-block__item img{
@@ -742,9 +725,8 @@ footer {
 		justify-content: center;
 	}
 
-	.bottom-text {
-		margin-left: 8%;
-		gap: 15px;
+	.bottom-text h1 {
+		margin-right: 15px;
 	}
 
 	.bottom-btn a{
@@ -831,7 +813,16 @@ footer {
 	}
 	.experts-block {
 		justify-content: center;
-		gap:25px;
+	}
+
+	.experts-left-btn {
+		position: relative;
+		right: 25px;
+	}
+
+	.experts-right-btn {
+		position: relative;
+		left: 25px;
 	}
 
 	.experts-block__item {
@@ -846,7 +837,10 @@ footer {
 		padding-left: 50px;
 		flex-direction: column;
 		align-items: center;
-		gap: 60px;
+	}
+
+	.contact-img {
+		margin-top: 60px;
 	}
 }
 
@@ -896,7 +890,6 @@ footer {
 	}
 	.bottom-text {
 		flex-direction: column;
-		gap: 0;
 	}
 
 	.articles-subtitle {
@@ -913,8 +906,12 @@ footer {
 }
 
 @media (max-width: 555px) {
+	.header-text {
+		padding-left: 50px;
+	}
+	
 	.header-text h2 {
-		font-size: 45px;
+		font-size: 40px;
 		line-height: 1px;
 	}
 	.bottom-block {
@@ -924,5 +921,17 @@ footer {
 	}
 	.bottom-text {
 		padding-bottom: 15px;
+	}
+
+	.startup-btn img, .startup-btn__item button {
+		width: 80px;
+		height: 80px;
+	}
+
+	.investers a {
+		font-size: 28px;
+	}
+	.investers-block__item {
+		width: 250px;
 	}
 }
