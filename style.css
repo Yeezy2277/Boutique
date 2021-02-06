@@ -9,6 +9,7 @@
    }
 body {
 	font-family: 'Montserrat', sans-serif;
+	background: gray;
 	/* overflow-x: hidden; */
 	transition: all ease 1s;
 }
@@ -135,7 +136,7 @@ button {
 #menu {
 	width: 300px;
 	margin-left: -225px;
-	background: #fbf0ff;
+	background: #957DC3;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -297,7 +298,6 @@ button {
 
 .startup-btn {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
 	gap:20px;
 }
@@ -399,6 +399,28 @@ bottom: 1px;
 	border-radius: 5%;
 	padding-bottom: 50px;
 	margin-top: 150px;
+}
+
+#investers-1 h2, #investers-2 h2, #investers-3 h2 {
+	position: relative;
+	bottom: 25px;
+}
+
+#expert-block-11 p, #expert-block-2 p, #expert-block-3 p {
+	position: relative;
+	left: 50px;
+}
+
+#expert-block-1 h2, #expert-block-3 h2 {
+	position: relative;
+	top: 80px;
+}
+
+#investers-1 p, #investers-2 p, #investers-3 p {
+	padding-right: 30px;
+	position: relative;
+	left: 50px;
+	bottom: 25px;
 }
 
 .investers-block__item img {
@@ -685,7 +707,31 @@ footer {
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1090px) {
+	.investers-block {
+		gap: 10px;
+	}
+	.investers-block__item {
+		width: 290px;
+		text-align: center;
+	}
+
+	.investers-block__item img{
+		bottom: 15%;
+	}
+
+	.investers-block__item h2 {
+		font-size: 28px;
+	}
+
+	.investers-block__item p {
+		font-size: 14px;
+	}
+	#investers-1 p, #investers-2 p, #investers-3 p {
+		left: 40px;
+	}
+}
+@media (max-width: 915px) {
 	.nav__link {
 		display: none;
 	}
@@ -715,6 +761,17 @@ footer {
 		flex-direction: column;
 	}
 
+	.header {
+		padding-left: 50px;
+	}
+
+	.about-section, .investers h1, .experts h1, .articles h1, .contact h1 {
+		padding-left: 80px;
+	}
+	.investers {
+		padding-left: 50px;
+	}
+
 	.about-text {
 		width: 75%;
 	}
@@ -722,12 +779,40 @@ footer {
 		flex-direction: column;
 	}
 
+	.startups-text h1, .investers h1{
+		padding-left: 50px;
+	}
+	.startup-btn img, .startup-btn__item button {
+		width: 100px;
+		height: 100px;
+	}
+
+	.startups-img img, .about-img img{
+		width: 80%;
+	}
+	#investers-1, #investers-2, #investers-3 {
+		display: flex;
+		align-items: center;
+	}
+	#investers-2, #investers-3 {
+		display:none;
+	}
+	#expert-block-1, #expert-block-3 {
+		display:none;
+	}
+
+	.investers-block {
+		padding-left: 60px;
+		align-items: center;
+	}
+
 	.investers-block__item {
-		width: 514px;
+		width: 350px;
+		text-align: center;
 	}
 
 	.investers-block__item img {
-		bottom:120px;
+		bottom:80px;
 	}
 	.investers-block > button {
 		display:block;
@@ -738,29 +823,38 @@ footer {
 		font-size: 14px;
 	}
 
-	.investers h1, .experts h1, .articles h1, .contact h1 {
-		padding-left: 5%;
-	}
-	.investers-block {
-		flex-direction: column;
-	}
-
-	.experts-block {
-		margin-left: 8%;
-		display: flex;
-		justify-content: space-evenly;
-	}
-
 	.articles-slider {
 		margin-left: 8%;
+	}
+	.experts-left-btn {
+		padding-left: 80px;
+	}
+	.experts-block {
+		justify-content: center;
+		gap:25px;
+	}
+
+	.experts-block__item {
+		padding: 0 50px;
 	}
 
 	.contact-form input, textarea {
 		width: 20.5rem;
 	}
+
+	.contact-block {
+		padding-left: 50px;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+	}
 }
 
 @media (max-width: 800px) {
+	.header-text h1 {
+		color: white;
+		font-size: 36px;
+	}
 	.experts-block__item {
 		padding: 0 10px;
 	}
@@ -768,15 +862,67 @@ footer {
 	.bottom-text h1 {
 		font-size: 13px;
 	}
+
+	.contacts h4, .contacts p{
+		font-size: 26px;
+	}
 }
 
-@media (max-width: 676px) {
+@media (max-width: 780px) {
+	.slider-line p{
+		font-size: 14px;
+	}
+
+	.articles-slider {
+		padding-left: 20px;
+	}
+
+	.articles h2 {
+		padding-left: 50px;
+	}
+	.articles-btn {
+		padding-left: 80px;
+	}
+}
+
+@media (max-width: 716px) {
 	.header-text h1 {
 		color: white;
-		font-size: 45px;
+		font-size: 32px;
 	}
 
 	.header-text {
 		line-height: 2.8em;
+	}
+	.bottom-text {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.articles-subtitle {
+		font-size: 40px;
+	}
+
+	.articles-subsubtitle {
+		font-size: 20px;
+	}
+	
+	.contacts h1, .contacts p {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 555px) {
+	.header-text h2 {
+		font-size: 45px;
+		line-height: 1px;
+	}
+	.bottom-block {
+		flex-direction: column;
+		justify-content: center;
+		height: 20vh;
+	}
+	.bottom-text {
+		padding-bottom: 15px;
 	}
 }
