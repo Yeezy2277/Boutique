@@ -44,127 +44,6 @@ button {
 	align-items: center;
 }
 
-.burger {
-	display: block;
-	position:absolute;
-	right: 0;
-	top: 0;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	width: 96px;
-	height: 77px;
-	font-size: 0;
-	box-shadow: none;
-	cursor: pointer;
-	border:none;
-	
-}
-
-.burger:focus {
-	outline:none;
-}
-
-.burger span {
-	display: block;
-	position:absolute;
-	top: 34px;
-	left: 18px;
-	right: 18px;
-	height: 8px;
-	background: #fff;
-}
-
-.burger span::before, .burger span::after {
-	position: absolute;
-	display: block;
-	left: 0;
-	width: 100%;
-	height: 8px;
-	background: #fff;
-	content: "";
-}
-
-.burger span::before {
-	top: -20px;
-}
-
-.burger span::after {
-	bottom: -20px;
-}
-
-.burger {
-	background: #000;
-}
-
-.burger-line span {
-	transition: background 0s 0.3s;
-}
-
-.burger-line span::before, .burger-line span::after {
-	transition-duration: 0.3s, 0.3s;
-	transition-delay: 0.3s, 0s;
-}
-
-.burger-line span::before {
-	transition-property: top, transform;
-}
-
-.burger-line span::after {
-	transition-property: bottom, transform;
-}
-
-.burger-line.is-active {
-	background: black;
-}
-
-.burger-line.is-active span{
-	background: none;
-}
-
-.burger-line.is-active span::before{
-	top:0;
-	transform:rotate(-45deg);
-}
-
-.burger-line.is-active span::after{
-	bottom:0;
-	transform:rotate(45deg);
-}
-
-#menu {
-	width: 300px;
-	margin-left: -225px;
-	background: #957DC3;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	transition: all ease 1s;
-	z-index: 9999;
-	display:none;
-}
-
-.container {
-	width: 80%;
-	min-width: 1000px;
-	margin: 30px auto;
-	text-align: center;
-}
-
-.body-active {
-	margin-left: 300px;
-
-}
-
-#menu.nav-active {
-	margin-left: 0;
-}
-.burger-line.is-active span::before, .burger-line.is-active span::after {
-	transition-delay: 0s, 0.3s;
-}
-
-
 .header-nav a {
 	text-decoration: none;
 	color: white;
@@ -402,7 +281,7 @@ bottom: 1px;
 
 #expert-block-11 p, #expert-block-2 p, #expert-block-3 p {
 	position: relative;
-	left: 50px;
+	left: 40px;
 }
 
 #expert-block-1 h2, #expert-block-3 h2 {
@@ -717,9 +596,6 @@ footer {
 	.nav__link {
 		display: none;
 	}
-	#menu {
-		display: block;
-	}
 	.header-nav {
 		justify-content: center;
 	}
@@ -742,26 +618,11 @@ footer {
 		flex-direction: column;
 	}
 
-	.header {
-		padding-left: 50px;
-	}
-
-	.about-section, .investers h1, .experts h1, .articles h1, .contact h1 {
-		padding-left: 80px;
-	}
-	.investers {
-		padding-left: 50px;
-	}
-
 	.about-text {
 		width: 75%;
 	}
 	.startups-block {
 		flex-direction: column;
-	}
-
-	.startups-text h1, .investers h1{
-		padding-left: 50px;
 	}
 	.startup-btn img, .startup-btn__item button {
 		width: 100px;
@@ -783,7 +644,7 @@ footer {
 	}
 
 	.investers-block {
-		padding-left: 60px;
+		padding-left: 30px;
 		align-items: center;
 	}
 
@@ -807,8 +668,12 @@ footer {
 	.articles-slider {
 		margin-left: 8%;
 	}
+
+	.articles-subsubtitle {
+		padding-left: 60px;
+	}
 	.experts-left-btn {
-		padding-left: 80px;
+		padding-left: 60px;
 	}
 	.experts-block {
 		justify-content: center;
@@ -833,7 +698,6 @@ footer {
 	}
 
 	.contact-block {
-		padding-left: 50px;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -869,15 +733,11 @@ footer {
 		font-size: 14px;
 	}
 
-	.articles-slider {
-		padding-left: 20px;
-	}
-
 	.articles h2 {
-		padding-left: 50px;
+		padding-right: 25px;
 	}
 	.articles-btn {
-		padding-left: 80px;
+		padding-right: 40px;
 	}
 }
 
@@ -912,7 +772,7 @@ footer {
 		width: 80%;
 	}
 	.header-text {
-		padding-left: 50px;
+		padding-right: 25px;
 	}
 
 	.header-text h2{
@@ -961,7 +821,7 @@ footer {
 
 @media (max-width: 530px) {
 	.articles-slider {
-		padding-left: 60px;
+		padding-right: 30px;
 	}
 
 	.articles-btn button {
@@ -969,8 +829,7 @@ footer {
 	}
 
 	.experts-block {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-right: 50px;
 	}
 
 	.contact-form input, textarea {
@@ -979,5 +838,24 @@ footer {
 
 	.contact-form button {
 		width: 16rem;
+	}
+}
+
+@media (max-width: 410px) {
+	.experts-block__item h2 {
+		font-size: 30px;
+	}
+
+	.experts-block__item p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 370px) {
+	#expert-block-11 p, #expert-block-2 p, #expert-block-3 p {
+		left: 25px;
+	}
+	.experts-block__item p {
+		font-size: 12px;
 	}
 }
