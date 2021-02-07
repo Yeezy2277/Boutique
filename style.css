@@ -9,7 +9,6 @@
    }
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: gray;
 	/* overflow-x: hidden; */
 	transition: all ease 1s;
 }
@@ -842,6 +841,9 @@ footer {
 	.contact-img {
 		margin-top: 60px;
 	}
+	.contact-form {
+		align-items: center;
+	}
 }
 
 @media (max-width: 800px) {
@@ -900,19 +902,26 @@ footer {
 		font-size: 20px;
 	}
 	
-	.contacts h1, .contacts p {
+	.contacts h4, .contacts p {
 		font-size: 18px;
 	}
 }
 
 @media (max-width: 555px) {
+	.nav-logo img {
+		width: 80%;
+	}
 	.header-text {
 		padding-left: 50px;
 	}
-	
-	.header-text h2 {
+
+	.header-text h2{
 		font-size: 40px;
 		line-height: 1px;
+	}
+
+	.header-text h4 {
+		font-size: 35px;
 	}
 	.bottom-block {
 		flex-direction: column;
@@ -923,6 +932,12 @@ footer {
 		padding-bottom: 15px;
 	}
 
+	.bottom-text h1 {
+		text-align: center;
+	}
+	.header-btn a {
+		font-size: 25px;
+	}
 	.startup-btn img, .startup-btn__item button {
 		width: 80px;
 		height: 80px;
@@ -933,5 +948,36 @@ footer {
 	}
 	.investers-block__item {
 		width: 250px;
+	}
+
+	.left-btn img, .right-btn img{
+		width: 70%;
+	}
+
+	.contacts h4, .contacts p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 530px) {
+	.articles-slider {
+		padding-left: 60px;
+	}
+
+	.articles-btn button {
+		font-size: 25px;
+	}
+
+	.experts-block {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.contact-form input, textarea {
+		width: 15.5rem;
+	}
+
+	.contact-form button {
+		width: 16rem;
 	}
 }
