@@ -23,7 +23,6 @@ let countStartups = 0;
 let width;
 // slider text
 const init = () => {
-	console.log('resize');
 	width = document.querySelector(".slider").offsetWidth;
 	sliderLine.style.width = width*text.length + 'px';
 	text.forEach(item => {
